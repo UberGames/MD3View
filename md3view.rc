@@ -1,0 +1,277 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Open..\tCtrl-O",              ID_FILE_OPEN
+        MENUITEM "Export as MD3",               ID_FILE_SAVE_MD3
+        MENUITEM "Export as GLM (Ghoul 2)",     ID_FILE_SAVE_G2
+        MENUITEM "Export as GLM (Ghoul 2) *without* 90-degree skewing ( added for JKA )", 
+                                                ID_FILE_SAVE_G2_PERFECT
+        MENUITEM "Export to Raw...",            ID_FILE_EXPORTTORAW, GRAYED
+        MENUITEM "Import skin..",               ID_FILE_IMPORTSKIN
+        MENUITEM "Import Sequence file",        ID_FILE_IMPORTMULTISEQ
+        MENUITEM "E&xit\tCtrl-X",               ID_FILE_EXIT
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "&Wire Frame\tW",              ID_VIEW_WIREFRAME
+        MENUITEM "&Flat Shaded\tF",             ID_VIEW_FLATSHADED
+        MENUITEM "&Textured\tT",                ID_VIEW_TEXTURED
+        MENUITEM "Textured &Shaded\tS",         ID_VIEW_TEXTUREDSHADED
+        MENUITEM "Textured && WireFrame\tCTRL-W", ID_VIEW_TEXTUREDWIREFRAME
+        MENUITEM SEPARATOR
+        MENUITEM "Reset &Viewpos\tSHIFT-V",     ID_VIEWPOS_RESET
+        MENUITEM SEPARATOR
+        MENUITEM "Refresh Texture\tAlt-R",      ID_VIEW_REFRESHTEXTURE
+        MENUITEM SEPARATOR
+        MENUITEM "F&ast Texture\tA",            ID_VIEW_NEAREST
+        MENUITEM "&Unfiltered Texture\tU",      ID_VIEW_UNFILTEREDTEXTURE
+        MENUITEM "F&iltered Texture\tI",        ID_VIEW_FILTEREDTEXTURE
+        MENUITEM SEPARATOR
+        MENUITEM "View Loaded-Models info",     ID_VIEW_LOADEDSTUFF
+        MENUITEM "View Origin ( model axis and tags )\tALT-O", ID_VIEWAXIS
+        MENUITEM SEPARATOR
+        MENUITEM "Toggle Alpha Blending\tSHIFT-A", ID_VIEWALPHA
+        MENUITEM SEPARATOR
+        MENUITEM "ScreenShot To Clipboard\tCTRL-C", ID_SCREENSHOT_CLIPBOARD
+        MENUITEM "ScreenShot To File\tSHIFT-C", ID_SCREENSHOT_FILE
+        MENUITEM SEPARATOR
+        MENUITEM "Background Colour Picker\tALT-C", ID_VIEW_COLOURPICKER
+        MENUITEM SEPARATOR
+        MENUITEM "Toggle FOV 80/90/10\tCTRL-F", ID_VIEW_FOVTOGGLE
+        MENUITEM "Toggle &Bounding-box\tCTRL-B", ID_VIEW_BOUNDSTOGGLE
+        MENUITEM SEPARATOR
+        MENUITEM "LOD1\tF1",                    ID_LOD0
+        MENUITEM "LOD2\tF2",                    ID_LOD1
+        MENUITEM "LOD3\tF3",                    ID_LOD2
+        MENUITEM SEPARATOR
+        MENUITEM "Picmip 0\tCTRL-F1",           ID_PICMIP0
+        MENUITEM "Picmip 1\tCTRL-F2",           ID_PICMIP1
+        MENUITEM "Picmip 2   (..7)\tCTRL-F3..F8", ID_PICMIP2
+    END
+    POPUP "Animation"
+    BEGIN
+        MENUITEM "&Slower\tLeftArrow",          ID_ANIMATION_SLOWER
+        MENUITEM "&Faster\tRightArrow",         ID_ANIMATION_FASTER
+        MENUITEM "S&top\tSpace",                ID_ANIMATION_STOP
+        MENUITEM "St&art\tUpArrow",             ID_ANIMATION_START
+        MENUITEM "&Rewind\tDownArrow",          ID_ANIMATION_REWIND
+        MENUITEM "&Interpolate\tN",             ID_ANIMATION_INTERPOLATE
+        MENUITEM "Increase face anim\tF4",      ID_FACE_INCANIM
+        MENUITEM "Decrease face anim\tCTRL-SHIFT F4", ID_FACE_DECANIM
+        MENUITEM "Reset face anim\tShift-F4",   ID_FACE_RESANIM
+    END
+    POPUP "Tags"
+    BEGIN
+        MENUITEM SEPARATOR
+    END
+    MENUITEM "About",                       ID_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_APP                 ICON    DISCARDABLE     "ID_APP.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_EXPORTTORAW     "This is pretty pointless really"
+    ID_VIEW_LOADEDSTUFF     "Shows stuff like tags, TGA filenames etc..."
+    ID_LOD0                 "Change LOD level"
+    ID_LOD1                 "View using LOD2 (if defined)"
+    ID_LOD2                 "View using LOD3 (if defined)"
+    ID_FACE_INCANIM         "(Only works if a head model is loaded)"
+    ID_FACE_DECANIM         "(Only works if a head model is loaded)"
+    ID_FACE_RESANIM         "(Only works if a head model is loaded)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_SAVE_MD3        "(Export model as MD3 format)"
+    ID_FILE_IMPORTMULTISEQ  "Used fr importing a multi-sequence lock file"
+    ID_VIEWALPHA            "Have a guess..."
+    ID_SCREENSHOT_CLIPBOARD "Takes a screenshot (without text onscreen)"
+    ID_SCREENSHOT_FILE      "Saves screenshot to a disk file (without onscreen text)"
+    ID_VIEW_COLOURPICKER    "Pick a different background colour"
+    ID_VIEW_FOVTOGGLE       "Toggles FOV between 80 (E.F.) 90 (Qu*ke) and 10 (for better screenshots)"
+    ID_FILE_SAVE_G2         "(Export model as Ghoul2)"
+    ID_PICMIP0              "Change all textures to use picmip 0"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PICMIP1              "Re-upload all textures at picmip 1"
+    ID_PICMIP2              "reload all textures to picmip 2"
+    ID_VIEWPOS_RESET        "Reset viewpos to default, useful if you've scrolled offscreen and lost the model"
+    ID_VIEW_TEXTUREDWIREFRAME 
+                            "View as both textured and with wireframe lines on"
+    ID_VIEW_BOUNDSTOGGLE    "Toggles the drawing of bounding boxes"
+    ID_FILE_SAVE_G2_PERFECT "(Export model as Ghoul2, but WITHOUT the 90-degree skewing)"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS DISCARDABLE 
+BEGIN
+    ",",            ID_FRAME_DW,            ASCII,  NOINVERT
+    ".",            ID_FRAME_UP,            ASCII,  NOINVERT
+    "A",            ID_VIEW_NEAREST,        VIRTKEY, NOINVERT
+    "A",            ID_ABOUT,               VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_VIEWALPHA,           VIRTKEY, SHIFT, NOINVERT
+    "B",            ID_VIEW_BOUNDSTOGGLE,   VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_SCREENSHOT_CLIPBOARD, VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_VIEW_COLOURPICKER,   VIRTKEY, ALT, NOINVERT
+    "C",            ID_SCREENSHOT_FILE,     VIRTKEY, SHIFT, NOINVERT
+    "F",            ID_VIEW_FLATSHADED,     VIRTKEY, NOINVERT
+    "F",            ID_VIEW_FOVTOGGLE,      VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_VIEW_FILTEREDTEXTURE, VIRTKEY, NOINVERT
+    "L",            ID_VIEWLOWERANIM_DEC,   VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_VIEWLOWERANIM_LOCK,  VIRTKEY, ALT, NOINVERT
+    "L",            ID_VIEWLOWERANIM_INC,   VIRTKEY, SHIFT, NOINVERT
+    "N",            ID_ANIMATION_INTERPOLATE, VIRTKEY, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_VIEWAXIS,            VIRTKEY, ALT, NOINVERT
+    "R",            ID_VIEW_REFRESHTEXTURE, VIRTKEY, ALT, NOINVERT
+    "S",            ID_VIEW_TEXTUREDSHADED, VIRTKEY, NOINVERT
+    "T",            ID_VIEW_TEXTURED,       VIRTKEY, NOINVERT
+    "U",            ID_VIEW_UNFILTEREDTEXTURE, VIRTKEY, NOINVERT
+    "U",            ID_VIEWUPPERANIM_DEC,   VIRTKEY, CONTROL, NOINVERT
+    "U",            ID_VIEWUPPERANIM_LOCK,  VIRTKEY, ALT, NOINVERT
+    "U",            ID_VIEWUPPERANIM_INC,   VIRTKEY, SHIFT, NOINVERT
+    "V",            ID_VIEWPOS_RESET,       VIRTKEY, SHIFT, NOINVERT
+    VK_DOWN,        ID_ANIMATION_REWIND,    VIRTKEY, NOINVERT
+    VK_ESCAPE,      ID_FILE_EXIT,           VIRTKEY, NOINVERT
+    VK_F1,          ID_LOD0,                VIRTKEY, NOINVERT
+    VK_F1,          ID_PICMIP0,             VIRTKEY, CONTROL, NOINVERT
+    VK_F2,          ID_LOD1,                VIRTKEY, NOINVERT
+    VK_F2,          ID_PICMIP1,             VIRTKEY, CONTROL, NOINVERT
+    VK_F3,          ID_LOD2,                VIRTKEY, NOINVERT
+    VK_F3,          ID_PICMIP2,             VIRTKEY, CONTROL, NOINVERT
+    VK_F4,          ID_FACE_INCANIM,        VIRTKEY, NOINVERT
+    VK_F4,          ID_PICMIP3,             VIRTKEY, CONTROL, NOINVERT
+    VK_F4,          ID_FACE_RESANIM,        VIRTKEY, SHIFT, NOINVERT
+    VK_F4,          ID_FACE_DECANIM,        VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    VK_F5,          ID_PICMIP4,             VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_PICMIP5,             VIRTKEY, CONTROL, NOINVERT
+    VK_F7,          ID_PICMIP6,             VIRTKEY, CONTROL, NOINVERT
+    VK_F8,          ID_PICMIP7,             VIRTKEY, CONTROL, NOINVERT
+    VK_LEFT,        ID_ANIMATION_SLOWER,    VIRTKEY, NOINVERT
+    VK_RIGHT,       ID_ANIMATION_FASTER,    VIRTKEY, NOINVERT
+    VK_SPACE,       ID_ANIMATION_STOP,      VIRTKEY, NOINVERT
+    VK_UP,          ID_ANIMATION_START,     VIRTKEY, NOINVERT
+    "W",            ID_VIEW_WIREFRAME,      VIRTKEY, NOINVERT
+    "W",            ID_VIEW_TEXTUREDWIREFRAME, VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_FILE_EXIT,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FILESTRING          "Model files (*.MDR)(*.MD3)|*.md?|"
+    IDS_RAWFILEFILTER       ".raw files (*.raw)|*.raw|"
+    IDS_SKINFILEFILTER      "Skin files (*.skin)|*.skin|"
+    IDS_MD3FILEFILTER       "MD3 files (*.MD3)|*.md3|"
+    IDS_SEQFILTER           "Multi-Sequence lock files (*.SEQ)|*.SEQ|"
+END
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
